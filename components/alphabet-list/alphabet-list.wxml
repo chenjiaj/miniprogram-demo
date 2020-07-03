@@ -1,0 +1,23 @@
+<!--components/alphabet-list/alphabet-list.wxml-->
+<view class="alphabet-list-wrapper" id="alphabet-list-wrapper" style="height: {{height}}" >
+  <scroll-view scroll-y style="height: {{height}}" scroll-into-view="{{alpha}}">
+    <view class="alphabet">
+      <view class="alphabet-list">
+        <view wx:for="{{list}}" wx:key="unique" id="{{item.alphabet}}" class="section-item">
+          <view class="section-item-header">
+            {{item.alphabet}}
+          </view>
+          <view wx:for="{{item.datas}}" wx:key="unique" wx:for-item="cell" wx:for-index="cellIndex" class="section-item-cells">
+            <selectable item="{{cell}}" bind:alhabetTab="alhabetTab"></selectable>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  
+  <view data-id="selector" class="alphanet-selector" id="alphanet-selector" catchtouchstart="handlerAlphaTap" catchtouchmove="handlerMove" class="alphanet-selector">
+    <view data-ap="{{item.alphabet}}" wx:for="{{list}}" wx:key="unique" class="selector-one {{alpha === item.alphabet ? 'active-alphabet':''}}">
+      {{item.alphabet}}
+    </view>
+  </view>
+</view>

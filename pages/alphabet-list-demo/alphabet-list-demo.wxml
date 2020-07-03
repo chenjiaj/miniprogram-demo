@@ -1,0 +1,2 @@
+<alphabet-list list="{{alphabetList}}" height="100vh" generic:selectable="alphabet-item" bind:alhabetTab="alhabetTab"></alphabet-list>
+

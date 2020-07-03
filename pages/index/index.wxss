@@ -1,0 +1,14 @@
+.page-wrapper{
+  padding: 30rpx;
+  font-size: 30rpx;
+}
+
+.title{
+  text-align: center;
+  font-size: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.item{
+  padding: 10rpx 0;
+}

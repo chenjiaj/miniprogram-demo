@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "split-input": "/components/split-input/split-input"
+  }
+}

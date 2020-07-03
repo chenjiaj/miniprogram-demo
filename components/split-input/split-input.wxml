@@ -1,0 +1,11 @@
+<!--components/verifycode/verifycode.wxml-->
+<input class="key-input" value='{{inputValue}}' type="{{inputType}}"  maxlength="{{maxLenForOne*inputNum}}" adjust-position="true" confirm-type="done" focus="{{isFocus}}" bindinput="listenKeyInput"/> 
+
+<view class='verify-code-view' catchtap='openKeyboard'>
+    <view class="verify-input-view {{index==0?'verify-input-view-first':''}}"
+    wx:for="{{codes}}" 
+    wx:for-item="code"
+    wx:key="codeKey">
+      <text class='verify-text'>{{code}}</text>
+    </view>
+</view>

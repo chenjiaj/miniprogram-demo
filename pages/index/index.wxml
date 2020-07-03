@@ -1,1 +1,5 @@
-<component-tag-name styles='height:100vh' bindcitytap='cityTap'></component-tag-name>
+<view class="page-wrapper">
+  <view class="title">demo</view>
+  <navigator class="item" url="{{item.url}}" wx:for="{{list}}" wx:key="index">{{index+1}}.{{item.name}}</navigator>
+</view>
+

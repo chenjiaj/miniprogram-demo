@@ -1,14 +1,15 @@
 {
-  "pages":[
-    "pages/alphabetList/alphabetList",
+  "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/alphabet-list-demo/alphabet-list-demo",
+    "pages/split-input-demo/split-input-demo",
+    "pages/dialog-demo/dialog-demo"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

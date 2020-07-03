@@ -1,0 +1,9 @@
+<!--pages/dialog-demo/dialog-demo.wxml-->
+<button bindtap="open">打开弹窗</button>
+
+<dialog id="dialog" bind:confirm="dialogConfirm">
+  <view class="device-wrapper">
+    这是弹窗
+  </view>
+</dialog>
+

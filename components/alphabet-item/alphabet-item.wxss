@@ -1,0 +1,18 @@
+/* components/alphabet-item/alphabet-item.wxss */
+.alphabet-item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+}
+
+.alphabet-item .img{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+  margin-right: 33rpx;
+}
+
+.alphabet-item .text{
+  color: #000;
+  font-size: 28rpx;
+}

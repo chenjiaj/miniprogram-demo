@@ -1,0 +1,2 @@
+ <view class="title-style">自动转换为大写</view>
+ <split-input maxLenForOne="2" inputNum="6" toUpperCase="{{true}}" bind:change="change"></split-input>

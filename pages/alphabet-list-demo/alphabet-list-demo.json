@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "alphabet-list": "/components/alphabet-list/alphabet-list",
+    "alphabet-item": "/components/alphabet-item/alphabet-item"
+  }
+}

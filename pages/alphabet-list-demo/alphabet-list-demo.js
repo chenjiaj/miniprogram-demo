@@ -1,6 +1,11 @@
+// pages/alphabet-list-demo/alphabet-list-demo.js
 Page({
-  data:{
-    list: [
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    alphabetList: [
       {alphabet: 'A', datas: ['asome','aentries','are here']},
       {alphabet: 'B', datas: ['bbsome','bebntries','bare here']},
       {alphabet: 'C', datas:  ['csome','centries','care here']},
@@ -28,52 +33,10 @@ Page({
       {alphabet: 'Y', datas:  ['ysome','yentries','yare here']},
       {alphabet: 'Z', datas:  ['zsome','zentries','zare here']},
     ],
-    alpha: '',
-    windowHeight: ''
   },
-  onLoad(options){
-    try {
-      const query = wx.createSelectorQuery()
-      query.select('#alphanet-selector').boundingClientRect()
-      query.exec((res)=>{
-        const {top,height} = res[0];
-        this.offsetTop = top;
-        this.apHeight = height / (this.data.list.length || 1) ;
-      })
-      this.setData({windowHeight: res.windowHeight + 'px'})
-    } catch (e) {
-      
-    }
-  },
-  handlerAlphaTap(e) {
-    let moveY = e.touches[0].clientY;
-    let {ap} = e.target.dataset;
-    this.setData({alpha: ap});
-    wx.showToast({
-      title: ap,
-      icon:'none',
-      duration: 300
-    })
-  },
-  handlerMove(e) {
-    let {list} = this.data;
-    let moveY = e.touches[0].clientY;
-    let rY = moveY - this.offsetTop;
-    console.log('moveY',moveY)
-    if(rY >= 0) {
-      let index = Math.ceil((rY - this.offsetTop)/ this.apHeight);
-      console.log(index)
-      if(0 <= index < list.length) {
-        let nonwAp = list[index];
-        if(nonwAp){
-          nonwAp && this.setData({alpha: nonwAp.alphabet});
-          wx.showToast({
-            title: nonwAp.alphabet,
-            icon:'none',
-            duration: 300
-          })
-        }
-      } 
-    }
+
+  alhabetTab(e){
+    const {detail} = e;
+    console.log('点击的信息', detail);
   }
 })

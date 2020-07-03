@@ -1,19 +1,19 @@
 // pages/cityList/cityList.js
 Page({
   data: {
-    winHeight:0
+    list:[
+      {
+        name:'字母索引列表',
+        url:'/pages/alphabet-list-demo/alphabet-list-demo',
+      },
+      {
+        name:'分隔表单（类似验证吗输入）',
+        url:'/pages/split-input-demo/split-input-demo',
+      },
+      {
+        name:'弹窗',
+        url:'/pages/dialog-demo/dialog-demo',
+      }
+    ]
   },//监听传值，后面自己做处理了
-  cityTap(e){
-    const cityName=e.detail.cityname;
-  },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    // const win = wx.getSystemInfoSync();
-    // console.log(win);
-    // this.setData({
-    //   winHeight: win.windowHeight
-    // });
-  }
 })

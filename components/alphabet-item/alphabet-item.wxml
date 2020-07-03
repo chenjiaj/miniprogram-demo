@@ -1,0 +1,4 @@
+<!--components/alphabet-item/alphabet-item.wxml-->
+<view class="alphabet-item" bindtap="alhabetTab" data-item="{{item}}">
+  <text class="text">{{item}}</text>
+</view>

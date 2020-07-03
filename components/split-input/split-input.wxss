@@ -1,0 +1,33 @@
+/* components/verifycode/verifycode.wxss */
+
+ .key-input{
+  position: fixed;
+  bottom: 200rpx; /*向上推起的效果*/
+  right: -1000rpx;
+  width: 100rpx;
+  height: 20rpx;
+} 
+
+.verify-code-view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-input-view{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-text{
+  width: 70rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1px solid #666;
+  border-radius: 3px;
+  margin: 40rpx 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+}
+
