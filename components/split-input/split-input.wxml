@@ -1,4 +1,3 @@
-<!--components/verifycode/verifycode.wxml-->
 <input class="key-input" value='{{inputValue}}' type="{{inputType}}"  maxlength="{{maxLenForOne*inputNum}}" adjust-position="true" confirm-type="done" focus="{{isFocus}}" bindinput="listenKeyInput"/> 
 
 <view class='verify-code-view' catchtap='openKeyboard'>

@@ -1,4 +1,3 @@
-// components/verifycode/verifycode.js
 Component({
   options: {
     multipleSlots: true // 在组件定义时的选项中启用多slot支持
@@ -75,13 +74,17 @@ Component({
       this.setData({
         codes: codeArray
       })
-      this.triggerEvent('change',codeArray.join(''));
+      const inputValue = codeArray.join('');
+      this.triggerEvent('change',inputValue);
       if (textLength >= maxLen) {
         this.setData({
           isFocus: false
         })
         this.triggerEvent('compelte',codeArray.join(''))
       }
+      this.setData({
+        inputValue: inputValue
+      })
     }
   }
   
