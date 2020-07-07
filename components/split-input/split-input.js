@@ -63,7 +63,7 @@ Component({
         text = text.toUpperCase();
       }
       if(notEmptyString){
-        text = text.replace(' ','');
+        text = text.replace(/\s/g,'');
       }
       let textLength = text.length;
       let codeArray = Array.from({length:this.data.inputNum},()=>'');
