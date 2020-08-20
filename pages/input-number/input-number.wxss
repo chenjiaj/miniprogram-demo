@@ -1,0 +1,5 @@
+/* pages/input-number/input-number.wxss */
+
+page{
+  padding: 50rpx;
+}

@@ -13,6 +13,10 @@ Page({
       {
         name:'弹窗',
         url:'/pages/dialog-demo/dialog-demo',
+      },
+      {
+        name:'加减数字表单',
+        url:'/pages/input-number/input-number',
       }
     ]
   },//监听传值，后面自己做处理了

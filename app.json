@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/alphabet-list-demo/alphabet-list-demo",
     "pages/split-input-demo/split-input-demo",
-    "pages/dialog-demo/dialog-demo"
+    "pages/dialog-demo/dialog-demo",
+    "pages/input-number/input-number"
   ],
   "window": {
     "backgroundTextStyle": "light",

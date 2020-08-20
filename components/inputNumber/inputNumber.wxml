@@ -1,0 +1,6 @@
+<!--miniprogram/pages/components/inputNumber/input-number.wxml-->
+<view class="input-number-wrapper">
+  <view class="reduce-btn o-btn {{num <= min ? 'disabled' : ''}}"  bindtap="reduce">-</view>
+  <input class="input" type="number" value="{{num}}" bindblur="inputBlur" />
+  <view class="add-btn o-btn {{num >=max ? 'disabled' : ''}}"  bindtap="add">+</view>
+</view>

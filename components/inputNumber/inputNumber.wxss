@@ -1,0 +1,38 @@
+/* miniprogram/pages/components/inputNumber/input-number.wxss */
+.input-number-wrapper{
+  display: flex;
+  height: 40rpx;
+  align-items: stretch;
+  text-align: center;
+  border:1px solid #c4c4c4;
+  border-radius: 6rpx;
+  font-size:26rpx;
+  width: 125rpx;
+}
+
+.reduce-btn{
+  border-right:1px solid #c4c4c4;
+}
+
+.add-btn{
+  border-left:1px solid #c4c4c4;
+}
+
+.o-btn{
+  width: 41rpx;
+  color: #000;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.o-btn.disabled{
+  color: #ddd;
+}
+
+.input{
+  width: 41rpx;
+  line-height: 40rpx;
+  height: 40rpx;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}

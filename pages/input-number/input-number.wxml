@@ -1,0 +1,3 @@
+<!--pages/input-number/input-number.wxml-->
+<input-number num="{{num}}" min="1" max="5" bindchange="inputChange"></input-number>
+<view>当前值：{{num}}</view>
